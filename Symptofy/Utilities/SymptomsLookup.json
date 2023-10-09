@@ -1,0 +1,44 @@
+{
+  "symptoms": [
+    {
+      "id": 1,
+      "symptomName": "Weakness",
+      "symptomIcon": ""
+    },
+    {
+      "id": 2,
+      "symptomName": "Tremors",
+      "symptomIcon": ""
+    },
+    {
+      "id": 3,
+      "symptomName": "Muscle Stiffness",
+      "symptomIcon": ""
+    },
+    {
+      "id": 4,
+      "symptomName": "Constipation",
+      "symptomIcon": ""
+    },
+    {
+      "id": 5,
+      "symptomName": "Headache",
+      "symptomIcon": ""
+    },
+    {
+      "id": 6,
+      "symptomName": "Urinary Retention",
+      "symptomIcon": ""
+    },
+    {
+      "id": 7,
+      "symptomName": "Stomach Ache",
+      "symptomIcon": ""
+    },
+    {
+      "id": 8,
+      "symptomName": "Hallucinations",
+      "symptomIcon": ""
+    }
+  ]
+}

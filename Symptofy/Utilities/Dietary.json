@@ -1,0 +1,104 @@
+{
+    "dietaryItems": [
+        {
+            "id": 1,
+            "foodItemName": "Sugar Cookie"
+        },
+        {
+            "id": 2,
+            "foodItemName": "Large Pizza - Pepperoni"
+        },
+        {
+            "id": 3,
+            "foodItemName": "Red Velvet Cookie"
+        },
+        {
+            "id": 4,
+            "foodItemName": "Maruchan Instant Lunch Lime & Chili Shrimp"
+        },
+        {
+            "id": 5,
+            "foodItemName": "Kellogg's Frosted Flakes"
+        },
+        {
+            "id": 6,
+            "foodItemName": "Veggie Omelette"
+        },
+        {
+            "id": 7,
+            "foodItemName": "Bagel with Jelly"
+        },
+        {
+            "id": 8,
+            "foodItemName": "Breakfast Sausage Sandwich"
+        },
+        {
+            "id": 9,
+            "foodItemName": "Killer Sandwich"
+        },
+        {
+            "id": 10,
+            "foodItemName": "Olive Cream Cheese"
+        },
+        {
+            "id": 11,
+            "foodItemName": "Butter"
+        },
+        {
+            "id": 12,
+            "foodItemName": "Salad Platter"
+        },
+        {
+            "id": 13,
+            "foodItemName": "Chicken Salad"
+        },
+        {
+            "id": 14,
+            "foodItemName": "White Fish Salad"
+        },
+        {
+            "id": 15,
+            "foodItemName": "Cheese Burger"
+        },
+        {
+            "id": 16,
+            "foodItemName": "Stuffed Mushrooms"
+        },
+        {
+            "id": 17,
+            "foodItemName": "Coffee"
+        },
+        {
+            "id": 18,
+            "foodItemName": "Hot dogs"
+        },
+        {
+            "id": 19,
+            "foodItemName": "Tomato pie"
+        },
+        {
+            "id": 20,
+            "foodItemName": "Tikka Masala"
+        },
+        {
+            "id": 21,
+            "foodItemName": "Biryani"
+        },
+        {
+            "id": 22,
+            "foodItemName": "Rasmalia"
+        },
+        {
+            "id": 23,
+            "foodItemName": "Donut"
+        },
+        {
+            "id": 24,
+            "foodItemName": "Gulab Jamun"
+        },
+        {
+            "id": 25,
+            "foodItemName": "Nuts"
+        }
+    ]
+}
