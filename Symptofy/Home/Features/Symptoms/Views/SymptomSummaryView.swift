@@ -43,6 +43,8 @@ struct SymptomSummaryView: View {
                     }
                 } header: {
                     Text(slot.displayDateInUserFormat())
+                        .font(.title3)
+                        .bold()
                 } footer: {
                     if let medName = viewModel.symptomDisplayModels[slot]?.first?.medicationNames, !medName.isEmpty {
                         Text(medName)

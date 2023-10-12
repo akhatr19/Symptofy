@@ -24,7 +24,8 @@ final class AddSymptomsViewModel: NSObject, ObservableObject {
         let addSymptoms = AddSymptoms()
         addSymptoms.symptomAddedDate = Date().getRecordAddedFormat()
         addSymptoms.symptomOccurredDate = symptomEntryDate.getDateStringForFormat((DateFormats.yyyy_MM_dd_HH_mm_ss), timezone: nil) ?? ""
-        addSymptoms.temperature = temp
+        addSymptoms.temperature = temp.isEmpty ? UserDefaults.standard.value(forKey: "currentTemperature") as? String ?? "" : temp
+
         addSymptoms.currentMedications = MedicationsSummaryViewModel().getMedicationIdsForSymptom(symptomEntryDate)
         addSymptoms.currentDietary = DietarySummaryViewModel().getFoodIdsForSymptom(symptomEntryDate)
         for item in symptoms.filter({$0.symptomSeverity > 0}) {
@@ -71,14 +72,20 @@ final class AddSymptomsViewModel: NSObject, ObservableObject {
     func getCurrentLocationTemp() {
         WeatherApiManager.sharedInstace().getLocation(delegate: self)
     }
+    
+    func openWeatherWebserviceCall(_ location: CLLocationCoordinate2D) {
+        WeatherApiManager.sharedInstace().getTemparature(lat: "\(location.latitude)",
+                                                         lon: "\(location.longitude)") { value in
+            self.temp = value.getFormattedString(fraction: 2)
+            UserDefaults.standard.set(self.temp, forKey: "currentTemperature")
+        }
+    }
 }
 
 extension AddSymptomsViewModel: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        WeatherApiManager.sharedInstace().getTemparature(lat: "\(locValue.latitude)",
-                                                         lon: "\(locValue.longitude)") { value in
-            self.temp = value.getFormattedString(fraction: 2)
-        }
+        openWeatherWebserviceCall(locValue)
+
     }
 }

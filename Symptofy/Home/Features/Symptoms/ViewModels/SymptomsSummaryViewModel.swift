@@ -44,11 +44,16 @@ class SymptomsSummaryViewModel: ObservableObject {
                 
             }
             models.append(symptom)
-            if models.count == 7 {
+        }
+        let dict = Dictionary.init(grouping: models.flatMap({ $0.symptoms })) { ($0.symptomOccurredDate!.getDateFromString(DateFormats.yyyy_MM_dd_HH_mm_ss)?.getDateStringForFormat(DateFormats.yyyy_MM_dd, timezone: nil))! }
+        symptomDisplayModels = [:]
+        for key in dict.keys.sorted(by: { $0.getDateFromString(DateFormats.yyyy_MM_dd)! > $1.getDateFromString(DateFormats.yyyy_MM_dd)!}) {
+            symptomDisplayModels[key] = dict[key]
+            if symptomDisplayModels.count == 7 {
                 break
             }
         }
-        symptomDisplayModels = Dictionary.init(grouping: models.flatMap({ $0.symptoms })) { ($0.symptomOccurredDate!.getDateFromString(DateFormats.yyyy_MM_dd_HH_mm_ss)?.getDateStringForFormat(DateFormats.yyyy_MM_dd, timezone: nil))! }
+        
     }
 }
 

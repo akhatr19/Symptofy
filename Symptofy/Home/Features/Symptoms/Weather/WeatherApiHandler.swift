@@ -19,7 +19,7 @@ class WeatherApiManager: NSObject {
     }
     
     func getTemparature(lat: String, lon: String, completion: @escaping (Double) -> Void) {
-        let APIUrl = NSURL(string:"https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=816235944789051f18737baf232be371&units=imperial")
+        let APIUrl = NSURL(string:"https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=addc873cfc4eed8a2539b343e86cbb22&units=imperial")
         var request = URLRequest(url:APIUrl! as URL)
         request.httpMethod = "GET"
 
@@ -47,7 +47,12 @@ class WeatherApiManager: NSObject {
 extension WeatherApiManager {
     func getLocation(delegate: CLLocationManagerDelegate) {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
         locationManager.delegate = delegate
+        
+        if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
+                guard let locValue: CLLocationCoordinate2D = locationManager.location?.coordinate else { return }
+                AddSymptomsViewModel().openWeatherWebserviceCall(locValue)
+        }
     }
 }
