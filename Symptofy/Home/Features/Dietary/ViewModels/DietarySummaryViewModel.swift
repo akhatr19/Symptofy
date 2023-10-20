@@ -68,16 +68,36 @@ final class DietarySummaryViewModel: ObservableObject {
         return timeDict
     }
     
-    func getFoodIdsForSymptom(_ date: Date) -> List<ObjectId> {
+    //MARK: Get Food item ID to save into Symptom table
+    func getFoodIdsForSymptom(_ date: Date) -> ObjectId? {
         let dateString = date.getDateStringForFormat(DateFormats.yyyy_MM_dd, timezone: nil)!
         let minutes = date.getTimeInMinutes() - 240
         let ids = List<ObjectId>()
         let dietaries = getAllDietaries()
         for dietary in dietaries {
-            if dietary.foodItemConsumedDate == dateString && minutes <= dietary.foodItemConsumedTime && dietary.foodItemConsumedTime < (minutes + 240){
-                ids.append(dietary.id)
+            if dietary.foodItemConsumedDate == dateString &&
+                minutes <= dietary.foodItemConsumedTime {
+                let startDate = dietary.foodItemConsumedDate.getDateFromString(DateFormats.yyyy_MM_dd)!
+                if date.compare(startDate) == .orderedDescending &&
+                    dietary.foodItemConsumedTime <= (minutes + 240) {
+                    ids.append(dietary.id)
+                }
             }
         }
-        return ids
+        return ids.last
+    }
+    
+    //MARK: Get Dietary Name to display in Graph
+    func getDietaryNameForSymptomChart(_ objectID: ObjectId) -> String {
+        var foodName = ""
+        let dietaryItems = getAllDietaries()
+        let _ = dietaryItems.filter { dietaryItem in
+            let contains = objectID == dietaryItem.id
+            if objectID == dietaryItem.id {
+                foodName = "\(dietaryItem.foodItemName)"
+            }
+            return contains
+        }
+        return foodName
     }
 }

@@ -239,4 +239,19 @@ extension MedicationsSummaryViewModel {
         let joinedMeds = medNames.joined(separator: ", ")
         return joinedMeds
     }
+    
+    func getMedicationNameForSymptomSummary(_ objectID:  List<ObjectId>) -> String {
+        var medNames = [String]()
+        let medications = getAllMedications()
+        let _ = medications.filter { medication in
+            let contains = objectID.contains(medication.id)
+            if contains {
+                let name = "\(medication.medicationName) \(medication.medicactionDosage) * \(medication.medicationFrequency.count)"
+                medNames.append(name)
+            }
+            return contains
+        }
+        let joinedMeds = medNames.joined(separator: " + ")
+        return joinedMeds
+    }
 }

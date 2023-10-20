@@ -8,43 +8,34 @@
 import SwiftUI
 
 struct SelectButton: View {
+    
     @Binding var isSelected: Bool
     @State var color: Color
     @Binding var text: String
     
     var body: some View {
-        ZStack {
-            if isSelected {
-                RoundedRectangle(cornerRadius: 12)
-                    .frame(height: 40)
-                    .foregroundColor(color)
-                
-                Text(text)
-                    .foregroundColor(.buttonTextColor)
-                    .font(.headline)
+        if isSelected {
+            Spacer()
+            if text == MedicationsLocalizedStrings.MedicationSummary.skipped {
+                Image(systemName: "xmark.circle.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
             } else {
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.buttonBackgroundColor, lineWidth: 1)
-                    .frame(height: 40)
-                
-                if text == MedicationsLocalizedStrings.MedicationSummary.skip {
-                    RoundedRectangle(cornerRadius: 12)
-                        .stroke(.red, lineWidth: 1)
-                        .frame(height: 40)
-
-                    Text(text)
-                        .foregroundColor(.red)
-                        .font(.headline)
-                } else {
-                    RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.buttonBackgroundColor, lineWidth: 1)
-                        .frame(height: 40)
-
-                    Text(text)
-                        .foregroundColor(.buttonBackgroundColor)
-                        .font(.headline)
-                }
+                Image(systemName: "checkmark.circle.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
             }
+            Spacer()
+        } else {
+            Spacer()
+            if text == MedicationsLocalizedStrings.MedicationSummary.skip {
+                Image(systemName: "xmark")
+                    .font(.largeTitle)
+            } else {
+                Image(systemName: "checkmark")
+                    .font(.largeTitle)
+            }
+            Spacer()
         }
     }
 }

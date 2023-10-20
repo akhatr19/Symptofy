@@ -15,7 +15,7 @@ class AddSymptoms: Object, Identifiable {
     @Persisted var symptoms: List<SymptomDataModel> = List<SymptomDataModel>()
     @Persisted var temperature: String
     @Persisted var currentMedications: List<ObjectId> = List<ObjectId>()
-    @Persisted var currentDietary: List<ObjectId> = List<ObjectId>()
+    @Persisted var currentDietary: ObjectId?
 }
 
 class SymptomDataModel: Object, Identifiable {

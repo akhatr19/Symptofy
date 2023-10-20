@@ -25,8 +25,7 @@ final class AddSymptomsViewModel: NSObject, ObservableObject {
         addSymptoms.symptomAddedDate = Date().getRecordAddedFormat()
         addSymptoms.symptomOccurredDate = symptomEntryDate.getDateStringForFormat((DateFormats.yyyy_MM_dd_HH_mm_ss), timezone: nil) ?? ""
         addSymptoms.temperature = temp.isEmpty ? UserDefaults.standard.value(forKey: "currentTemperature") as? String ?? "" : temp
-
-        addSymptoms.currentMedications = MedicationsSummaryViewModel().getMedicationIdsForSymptom(symptomEntryDate)
+        addSymptoms.currentMedications = MedicationsSummaryViewModel().getMedicationIdsForSymptom(symptomEntryDate.startOfDay!)
         addSymptoms.currentDietary = DietarySummaryViewModel().getFoodIdsForSymptom(symptomEntryDate)
         for item in symptoms.filter({$0.symptomSeverity > 0}) {
             item.symptomOccurredDate = addSymptoms.symptomOccurredDate
@@ -72,7 +71,7 @@ final class AddSymptomsViewModel: NSObject, ObservableObject {
     func getCurrentLocationTemp() {
         WeatherApiManager.sharedInstace().getLocation(delegate: self)
     }
-    
+
     func openWeatherWebserviceCall(_ location: CLLocationCoordinate2D) {
         WeatherApiManager.sharedInstace().getTemparature(lat: "\(location.latitude)",
                                                          lon: "\(location.longitude)") { value in
@@ -86,6 +85,5 @@ extension AddSymptomsViewModel: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         openWeatherWebserviceCall(locValue)
-
     }
 }

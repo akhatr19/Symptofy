@@ -14,4 +14,5 @@ struct DateFormats {
     static let EEEE_MMMM_d_yyyy = "EEEE, MMMM d yyyy"
     static let MMMM_yyyy = "MMMM yyyy"
     static let yyyy_MM_dd_HH_mm_ss = "yyyy-MM-dd HH:mm:ss"
+    static let HH_mm = "HH:mm"
 }

@@ -61,6 +61,22 @@
 		783678362AEF158B00DB97DC /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783678352AEF158B00DB97DC /* SliderView.swift */; };
 		783678382AEF15A200DB97DC /* SymptomSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783678372AEF15A200DB97DC /* SymptomSummaryViewModel.swift */; };
 		7836783B2AEF15F100DB97DC /* AddSymptomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7836783A2AEF15F100DB97DC /* AddSymptomsViewModel.swift */; };
+		783F14C92AF0A62A00FCB935 /* DosageVSSymptomChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14C82AF0A62A00FCB935 /* DosageVSSymptomChartModel.swift */; };
+		783F14CB2AF0A66000FCB935 /* DosageVSSymptomSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14CA2AF0A66000FCB935 /* DosageVSSymptomSummaryModel.swift */; };
+		783F14CD2AF0A68C00FCB935 /* FoodVSSymptomChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14CC2AF0A68C00FCB935 /* FoodVSSymptomChartModel.swift */; };
+		783F14CF2AF0A6B100FCB935 /* TemperatureVSSymptomChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14CE2AF0A6B100FCB935 /* TemperatureVSSymptomChartModel.swift */; };
+		783F14D12AF0A6D000FCB935 /* TimeVSSymptomChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14D02AF0A6D000FCB935 /* TimeVSSymptomChartModel.swift */; };
+		783F14D42AF0A70200FCB935 /* FrequencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14D32AF0A70200FCB935 /* FrequencyView.swift */; };
+		783F14D72AF0A73400FCB935 /* DosageVSSymptomChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14D62AF0A73400FCB935 /* DosageVSSymptomChartViewModel.swift */; };
+		783F14D92AF0A77900FCB935 /* DosageVSSymptomSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14D82AF0A77900FCB935 /* DosageVSSymptomSummaryViewModel.swift */; };
+		783F14DB2AF0A7AB00FCB935 /* FoodVSSymptomChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14DA2AF0A7AB00FCB935 /* FoodVSSymptomChartViewModel.swift */; };
+		783F14DD2AF0A7CC00FCB935 /* TemperatureVSSymptomChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14DC2AF0A7CC00FCB935 /* TemperatureVSSymptomChartViewModel.swift */; };
+		783F14DF2AF0A7F800FCB935 /* TimeVSSymptomChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14DE2AF0A7F800FCB935 /* TimeVSSymptomChartViewModel.swift */; };
+		783F14E32AF0A83700FCB935 /* DosageVSSymptomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14E22AF0A83700FCB935 /* DosageVSSymptomChartView.swift */; };
+		783F14E52AF0A85C00FCB935 /* DosageVSSymptomChartSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14E42AF0A85C00FCB935 /* DosageVSSymptomChartSummaryView.swift */; };
+		783F14E72AF0A88000FCB935 /* FoodVSSymptomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14E62AF0A88000FCB935 /* FoodVSSymptomChartView.swift */; };
+		783F14E92AF0A8D100FCB935 /* TemperatureVSSymptomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14E82AF0A8D100FCB935 /* TemperatureVSSymptomChartView.swift */; };
+		783F14EB2AF0A95300FCB935 /* TimeVSSymptomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F14EA2AF0A95300FCB935 /* TimeVSSymptomChartView.swift */; };
 		7862F8FE2AEF163E0087B409 /* SymptomsSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862F8FD2AEF163E0087B409 /* SymptomsSummaryViewModel.swift */; };
 		7862F9012AEF16760087B409 /* AddSymptomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862F9002AEF16760087B409 /* AddSymptomsView.swift */; };
 		7862F9032AEF16A30087B409 /* SymptomSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862F9022AEF16A30087B409 /* SymptomSummaryView.swift */; };
@@ -147,6 +163,22 @@
 		783678352AEF158B00DB97DC /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		783678372AEF15A200DB97DC /* SymptomSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomSummaryViewModel.swift; sourceTree = "<group>"; };
 		7836783A2AEF15F100DB97DC /* AddSymptomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSymptomsViewModel.swift; sourceTree = "<group>"; };
+		783F14C82AF0A62A00FCB935 /* DosageVSSymptomChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageVSSymptomChartModel.swift; sourceTree = "<group>"; };
+		783F14CA2AF0A66000FCB935 /* DosageVSSymptomSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageVSSymptomSummaryModel.swift; sourceTree = "<group>"; };
+		783F14CC2AF0A68C00FCB935 /* FoodVSSymptomChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVSSymptomChartModel.swift; sourceTree = "<group>"; };
+		783F14CE2AF0A6B100FCB935 /* TemperatureVSSymptomChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureVSSymptomChartModel.swift; sourceTree = "<group>"; };
+		783F14D02AF0A6D000FCB935 /* TimeVSSymptomChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVSSymptomChartModel.swift; sourceTree = "<group>"; };
+		783F14D32AF0A70200FCB935 /* FrequencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyView.swift; sourceTree = "<group>"; };
+		783F14D62AF0A73400FCB935 /* DosageVSSymptomChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageVSSymptomChartViewModel.swift; sourceTree = "<group>"; };
+		783F14D82AF0A77900FCB935 /* DosageVSSymptomSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageVSSymptomSummaryViewModel.swift; sourceTree = "<group>"; };
+		783F14DA2AF0A7AB00FCB935 /* FoodVSSymptomChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVSSymptomChartViewModel.swift; sourceTree = "<group>"; };
+		783F14DC2AF0A7CC00FCB935 /* TemperatureVSSymptomChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureVSSymptomChartViewModel.swift; sourceTree = "<group>"; };
+		783F14DE2AF0A7F800FCB935 /* TimeVSSymptomChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVSSymptomChartViewModel.swift; sourceTree = "<group>"; };
+		783F14E22AF0A83700FCB935 /* DosageVSSymptomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageVSSymptomChartView.swift; sourceTree = "<group>"; };
+		783F14E42AF0A85C00FCB935 /* DosageVSSymptomChartSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageVSSymptomChartSummaryView.swift; sourceTree = "<group>"; };
+		783F14E62AF0A88000FCB935 /* FoodVSSymptomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVSSymptomChartView.swift; sourceTree = "<group>"; };
+		783F14E82AF0A8D100FCB935 /* TemperatureVSSymptomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureVSSymptomChartView.swift; sourceTree = "<group>"; };
+		783F14EA2AF0A95300FCB935 /* TimeVSSymptomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVSSymptomChartView.swift; sourceTree = "<group>"; };
 		7862F8FD2AEF163E0087B409 /* SymptomsSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsSummaryViewModel.swift; sourceTree = "<group>"; };
 		7862F9002AEF16760087B409 /* AddSymptomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSymptomsView.swift; sourceTree = "<group>"; };
 		7862F9022AEF16A30087B409 /* SymptomSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomSummaryView.swift; sourceTree = "<group>"; };
@@ -452,6 +484,38 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		783F14C72AF0A61000FCB935 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				783F14C82AF0A62A00FCB935 /* DosageVSSymptomChartModel.swift */,
+				783F14CA2AF0A66000FCB935 /* DosageVSSymptomSummaryModel.swift */,
+				783F14CC2AF0A68C00FCB935 /* FoodVSSymptomChartModel.swift */,
+				783F14CE2AF0A6B100FCB935 /* TemperatureVSSymptomChartModel.swift */,
+				783F14D02AF0A6D000FCB935 /* TimeVSSymptomChartModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		783F14D22AF0A6F700FCB935 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				783F14D32AF0A70200FCB935 /* FrequencyView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		783F14D52AF0A71700FCB935 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				783F14D62AF0A73400FCB935 /* DosageVSSymptomChartViewModel.swift */,
+				783F14D82AF0A77900FCB935 /* DosageVSSymptomSummaryViewModel.swift */,
+				783F14DA2AF0A7AB00FCB935 /* FoodVSSymptomChartViewModel.swift */,
+				783F14DC2AF0A7CC00FCB935 /* TemperatureVSSymptomChartViewModel.swift */,
+				783F14DE2AF0A7F800FCB935 /* TimeVSSymptomChartViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		7862F8FF2AEF16670087B409 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +536,9 @@
 		7862F9092AEF173B0087B409 /* Insights */ = {
 			isa = PBXGroup;
 			children = (
+				783F14D52AF0A71700FCB935 /* ViewModels */,
+				783F14D22AF0A6F700FCB935 /* SubViews */,
+				783F14C72AF0A61000FCB935 /* Models */,
 				7862F90A2AEF17420087B409 /* Views */,
 			);
 			path = Insights;
@@ -481,6 +548,11 @@
 			isa = PBXGroup;
 			children = (
 				7862F90B2AEF17520087B409 /* InsightsView.swift */,
+				783F14E22AF0A83700FCB935 /* DosageVSSymptomChartView.swift */,
+				783F14E42AF0A85C00FCB935 /* DosageVSSymptomChartSummaryView.swift */,
+				783F14E62AF0A88000FCB935 /* FoodVSSymptomChartView.swift */,
+				783F14E82AF0A8D100FCB935 /* TemperatureVSSymptomChartView.swift */,
+				783F14EA2AF0A95300FCB935 /* TimeVSSymptomChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -699,18 +771,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783F14E72AF0A88000FCB935 /* FoodVSSymptomChartView.swift in Sources */,
 				783677C72AEEB1AE00DB97DC /* ImageConstants.swift in Sources */,
 				783678342AEF156E00DB97DC /* CustomSymptomView.swift in Sources */,
 				783678292AEF149700DB97DC /* MedicationsSummaryView.swift in Sources */,
+				783F14D72AF0A73400FCB935 /* DosageVSSymptomChartViewModel.swift in Sources */,
+				783F14DB2AF0A7AB00FCB935 /* FoodVSSymptomChartViewModel.swift in Sources */,
 				783678222AEEC01B00DB97DC /* AddMedicationViewModel.swift in Sources */,
 				783677E82AEEB93F00DB97DC /* Date+Extension.swift in Sources */,
 				783677D42AEEB6D800DB97DC /* ConfirmationView.swift in Sources */,
+				783F14E52AF0A85C00FCB935 /* DosageVSSymptomChartSummaryView.swift in Sources */,
 				7862F9082AEF16F50087B409 /* WeatherApiHandler.swift in Sources */,
 				783677E32AEEB8A300DB97DC /* OptionalDatePickerField.swift in Sources */,
 				7836783B2AEF15F100DB97DC /* AddSymptomsViewModel.swift in Sources */,
 				783678122AEEBEB100DB97DC /* CalenderRepresentable.swift in Sources */,
 				786D9FA12AD2DDB100C887D2 /* ContentView.swift in Sources */,
 				783677D62AEEB71700DB97DC /* CustomDateFilterView.swift in Sources */,
+				783F14D12AF0A6D000FCB935 /* TimeVSSymptomChartModel.swift in Sources */,
 				783677EA2AEEB98F00DB97DC /* DateFormatter+Extension.swift in Sources */,
 				783677D02AEEB36600DB97DC /* NoDataViewModel.swift in Sources */,
 				783677EE2AEEB9CF00DB97DC /* String+Extension.swift in Sources */,
@@ -719,7 +796,9 @@
 				783677FC2AEEBB0000DB97DC /* AddDietaryViewModel.swift in Sources */,
 				783677FE2AEEBB2200DB97DC /* DietarySummaryViewModel.swift in Sources */,
 				783678312AEF153E00DB97DC /* SymptomLookupModel.swift in Sources */,
+				783F14E92AF0A8D100FCB935 /* TemperatureVSSymptomChartView.swift in Sources */,
 				783678272AEF145A00DB97DC /* AddMedicationView.swift in Sources */,
+				783F14EB2AF0A95300FCB935 /* TimeVSSymptomChartView.swift in Sources */,
 				783678382AEF15A200DB97DC /* SymptomSummaryViewModel.swift in Sources */,
 				783677CB2AEEB25C00DB97DC /* StringConstants.swift in Sources */,
 				783677F02AEEB9FA00DB97DC /* UIApplication+Extension.swift in Sources */,
@@ -727,11 +806,14 @@
 				783677F52AEEBA7E00DB97DC /* AddDietaryModel.swift in Sources */,
 				7836781D2AEEBFBF00DB97DC /* MedicationSummarySubView.swift in Sources */,
 				783677C92AEEB1F600DB97DC /* StorageConstants.swift in Sources */,
+				783F14DF2AF0A7F800FCB935 /* TimeVSSymptomChartViewModel.swift in Sources */,
 				783678182AEEBF6A00DB97DC /* CustomCalendarViewDateHeader.swift in Sources */,
+				783F14CF2AF0A6B100FCB935 /* TemperatureVSSymptomChartModel.swift in Sources */,
 				783677F72AEEBA9C00DB97DC /* DietaryPredefinedModel.swift in Sources */,
 				7862F8FE2AEF163E0087B409 /* SymptomsSummaryViewModel.swift in Sources */,
 				783678142AEEBF1B00DB97DC /* CustomCalendarView.swift in Sources */,
 				783677CE2AEEB32B00DB97DC /* ConfirmationViewModel.swift in Sources */,
+				783F14D92AF0A77900FCB935 /* DosageVSSymptomSummaryViewModel.swift in Sources */,
 				783677D82AEEB74800DB97DC /* NoDataView.swift in Sources */,
 				783677F92AEEBAB800DB97DC /* DietarySummaryModel.swift in Sources */,
 				783678242AEF142600DB97DC /* MedicationsSummaryViewModel.swift in Sources */,
@@ -740,11 +822,14 @@
 				783677DB2AEEB7BC00DB97DC /* CommonUIKitComponents.swift in Sources */,
 				783678032AEEBD4400DB97DC /* DietarySummaryView.swift in Sources */,
 				7836780F2AEEBE5B00DB97DC /* MedicationRecordModel.swift in Sources */,
+				783F14D42AF0A70200FCB935 /* FrequencyView.swift in Sources */,
 				7836782F2AEF152300DB97DC /* AddSymptomModel.swift in Sources */,
 				786D9F9F2AD2DDB100C887D2 /* SymptofyApp.swift in Sources */,
 				783678062AEEBD7C00DB97DC /* HomeModel.swift in Sources */,
 				783677DD2AEEB7EC00DB97DC /* CustomButton.swift in Sources */,
+				783F14CD2AF0A68C00FCB935 /* FoodVSSymptomChartModel.swift in Sources */,
 				78363F1A2AD32CB300D30795 /* TabBarView.swift in Sources */,
+				783F14C92AF0A62A00FCB935 /* DosageVSSymptomChartModel.swift in Sources */,
 				7862F9032AEF16A30087B409 /* SymptomSummaryView.swift in Sources */,
 				78363F1F2AD32D3800D30795 /* HomeView.swift in Sources */,
 				783677EC2AEEB9AF00DB97DC /* Double+Extension.swift in Sources */,
@@ -753,10 +838,13 @@
 				7862F90C2AEF17520087B409 /* InsightsView.swift in Sources */,
 				7862F90F2AEF17940087B409 /* ThemeColors.swift in Sources */,
 				783677E62AEEB91D00DB97DC /* Array+Extension.swift in Sources */,
+				783F14E32AF0A83700FCB935 /* DosageVSSymptomChartView.swift in Sources */,
 				78363F152AD32BCB00D30795 /* RealmDatabase.swift in Sources */,
 				783678092AEEBDBB00DB97DC /* HomeSubView.swift in Sources */,
+				783F14CB2AF0A66000FCB935 /* DosageVSSymptomSummaryModel.swift in Sources */,
 				7836780D2AEEBE3B00DB97DC /* AddMedicationModel.swift in Sources */,
 				7862F9012AEF16760087B409 /* AddSymptomsView.swift in Sources */,
+				783F14DD2AF0A7CC00FCB935 /* TemperatureVSSymptomChartViewModel.swift in Sources */,
 				783677DF2AEEB83900DB97DC /* CustomText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
